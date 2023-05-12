@@ -20,8 +20,6 @@ $(function () {
         indentedSoftWrap: false,
         fontSize: 14,
         theme: 'ace/theme/dracula',
-
-        // TODO consider some options
     });
 
     editor.on('change', () => {
