@@ -1,4 +1,4 @@
-# [View here](https://x3rt.github.io/)
+# [View here](https://x3rt.github.io/public)
 <hr>
 
 ## License
