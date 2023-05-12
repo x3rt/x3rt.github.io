@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="content-script-type" content="text/javascript">
+    <meta http-equiv="content-style-type" content="text/css">
+    <meta name="description" content="This is a online Unity Rich Text editor with live preview.">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="image/LogoU.png">
+
+    <script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="js/convert.js"></script>
+    <script type="text/javascript" src="js/ace/ace.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+
+    <title>Unity Rich Text Live Preview</title>
+</head>
+<body>
+
+<div id="header">
+    <h1><a href="">Unity Rich Text Live Preview</a></h1>
+</div>
+
+<div id="container">
+    <div id="edit" class="column">
+        <div id="editor-wrapper">
+            <div id="editor"># Test cases for Unity Rich Text formatting
+
+&lt;b&gt;Bold&lt;/b&gt;
+&lt;i&gt;Italic&lt;/i&gt;
+&lt;u&gt;Underline&lt;/u&gt;
+&lt;s&gt;Strikethrough&lt;/s&gt;
+&lt;b&gt;&lt;i&gt;Bold Italic&lt;/i&gt;&lt;/b&gt;
+&lt;b&gt;&lt;u&gt;Bold Underline&lt;/u&gt;&lt;/b&gt;
+&lt;b&gt;&lt;s&gt;Bold Strikethrough&lt;/s&gt;&lt;/b&gt;
+&lt;i&gt;&lt;u&gt;Italic Underline&lt;/u&gt;&lt;/i&gt;
+&lt;i&gt;&lt;s&gt;Italic Strikethrough&lt;/s&gt;&lt;/i&gt;
+&lt;u&gt;&lt;s&gt;Underline Strikethrough&lt;/s&gt;&lt;/u&gt;
+&lt;b&gt;&lt;i&gt;&lt;u&gt;Bold Italic Underline&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;b&gt;&lt;i&gt;&lt;s&gt;Bold Italic Strikethrough&lt;/s&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;b&gt;&lt;u&gt;&lt;s&gt;Bold Underline Strikethrough&lt;/s&gt;&lt;/u&gt;&lt;/b&gt;
+&lt;i&gt;&lt;u&gt;&lt;s&gt;Italic Underline Strikethrough&lt;/s&gt;&lt;/u&gt;&lt;/i&gt;
+&lt;b&gt;&lt;i&gt;&lt;u&gt;&lt;s&gt;Bold Italic Underline Strikethrough&lt;/s&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;
+&lt;color=red&gt;Red&lt;/color&gt;
+&lt;color=#00ff00&gt;Green&lt;/color&gt;
+&lt;link=https://scpslgame.com/&gt;SCP:SL Click me :)&lt;/link&gt;
+&lt;size=20&gt;Size 20&lt;/size&gt;
+&lt;size=200%&gt;200% Size&lt;/size&gt;
+&lt;size=20&gt;&lt;b&gt;&lt;i&gt;&lt;u&gt;&lt;s&gt;&lt;color=red&gt;Size 20 Bold Italic Underline
+Strikethrough Red&lt;/color&gt;&lt;/s&gt;&lt;/u&gt;&lt;/i&gt;&lt;/b&gt;&lt;/size&gt;
+&lt;size=20&gt;This&lt;size=200%&gt;is&lt;size=50%&gt;a&lt;size=200%&gt;test&lt;/size&gt;&lt;/size&gt;&lt;/size&gt;&lt;/size&gt;
+&lt;size=50%&gt;&lt;color=red&gt;Red&lt;/color&gt;&lt;color=green&gt;Green&lt;/color&gt;&lt;color=blue&gt;&lt;size=100%&gt;Blue Big&lt;/size&gt;&lt;/color&gt;&lt;/size&gt;
+
+
+&lt;size=150%&gt;&lt;link=https://github.com/x3rt&gt;x3rt&lt;/link&gt;&lt;/size&gt;
+            </div>
+        </div>
+    </div>
+    <div id="preview" class="column">
+        <div id="preview-wrapper">
+            <div id="output" class="content output">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+    <div id="copyright">
+        <a href="https://github.com/x3rt">
+            <img src="image/LogoU.png">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>
+
+<style>
+
+</style>
